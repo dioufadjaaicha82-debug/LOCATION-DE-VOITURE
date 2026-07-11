@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Saloum Drive - À propos</title>
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+body{
+    background:#111;
+    color:white;
+}
+/* MENU */
+nav{
+    background:#000;
+    padding:20px 50px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+.logo{
+    color:white;
+    font-size:32px;
+    font-weight:bold;
+}
+.logo span{
+    color:#f5b400;
+}
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:25px;
+    font-size:18px;
+}
+nav a:hover{
+    color:#f5b400;
+}
+/* A PROPOS */
+.about{
+    width:85%;
+    margin:60px auto;
+    display:flex;
+    align-items:center;
+    gap:50px;
+}
+.image{
+    width:50%;
+}
+.image img{
+    width:100%;
+    border-radius:20px;
+}
+.text{
+    width:50%;
+}
+.text h1{
+    color:#f5b400;
+    font-size:40px;
+    margin-bottom:20px;
+}
+.text p{
+    font-size:18px;
+    line-height:1.7;
+    margin-bottom:15px;
+}
+.btn{
+    display:inline-block;
+    margin-top:20px;
+    padding:12px 30px;
+    background:#f5b400;
+    color:black;
+    text-decoration:none;
+    border-radius:25px;
+    font-weight:bold;
+}
+.btn:hover{
+    background:white;
+}
+/* VALEURS */
+.valeurs{
+    width:85%;
+    margin:40px auto;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
+.box{
+    background:#222;
+    padding:25px;
+    text-align:center;
+    border-radius:15px;
+}
+.box h2{
+    color:#f5b400;
+    margin-bottom:15px;
+}
+/* RESPONSIVE */
+@media(max-width:900px){
+.about{
+    flex-direction:column;
+}
+.image,.text{
+    width:100%;
+}
+.valeurs{
+    grid-template-columns:1fr;
+}
+nav{
+    flex-direction:column;
+}
+}
+</style>
+</head>
+<body>
+<!-- Navigation -->
+<nav>
+<div class="logo">
+Saloum <span>Drive</span>
+</div>
+<div>
+<a href="index.html">Accueil</a>
+<a href="apropos.html">À propos</a>
+<a href="voitures.html">Voitures</a>
+<a href="services.html">Services</a>
+<a href="contact.html">Contact</a>
+</div>
+</nav>
+<!-- Section À propos -->
+<section class="about">
+<div class="image">
+<img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7">
+</div>
+<div class="text">
+<h1>
+À propos de Saloum Drive
+</h1>
+<p>
+Saloum Drive est une agence spécialisée dans la location de voitures modernes et fiables.
+</p>
+<p>
+Notre objectif est de proposer à nos clients des véhicules confortables, sécurisés et adaptés à tous leurs déplacements.
+</p>
+<p>
+Grâce à un service de qualité et une équipe disponible, nous vous accompagnons pour rendre vos voyages plus simples.
+</p>
+<a href="voitures.html" class="btn">
+Découvrir nos voitures
+</a>
+</div>
+</section>
+<!-- Nos valeurs -->
+<div class="valeurs">
+<div class="box">
+<h2>🚗 Qualité</h2>
+<p>
+Des véhicules bien entretenus pour votre confort.
+</p>
+</div>
+<div class="box">
+<h2>🔒 Sécurité</h2>
+<p>
+Votre sécurité est notre priorité.
+</p>
+</div>
+<div class="box">
+<h2>⭐ Satisfaction</h2>
+<p>
+Un service pensé pour répondre aux besoins des clients.
+</p>
+</div>
+</div>
+</body>
+</html>

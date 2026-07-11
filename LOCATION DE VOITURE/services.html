@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Saloum Drive - Services</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#111;
+    color:white;
+}
+
+
+/* MENU */
+
+nav{
+    background:#000;
+    padding:20px 50px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+
+.logo{
+    color:white;
+    font-size:32px;
+    font-weight:bold;
+}
+
+.logo span{
+    color:#f5b400;
+}
+
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:25px;
+    font-size:18px;
+}
+
+
+nav a:hover{
+    color:#f5b400;
+}
+
+
+/* TITRE */
+
+h1{
+    text-align:center;
+    margin:40px;
+    color:#f5b400;
+}
+
+
+/* SERVICES */
+
+.services{
+
+    width:90%;
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+}
+
+
+
+.box{
+
+    background:#222;
+
+    padding:30px;
+
+    text-align:center;
+
+    border-radius:15px;
+
+    transition:0.3s;
+
+}
+
+
+.box:hover{
+
+    transform:translateY(-10px);
+
+}
+
+
+
+.icon{
+
+    font-size:50px;
+
+    margin-bottom:20px;
+
+}
+
+
+.box h2{
+
+    color:#f5b400;
+
+    margin-bottom:15px;
+
+}
+
+
+.box p{
+
+    color:white;
+
+    line-height:1.5;
+
+}
+
+
+
+/* RESPONSIVE */
+
+@media(max-width:900px){
+
+.services{
+
+grid-template-columns:1fr;
+
+}
+
+
+nav{
+
+flex-direction:column;
+
+}
+
+}
+
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- Navigation -->
+
+<nav>
+
+<div class="logo">
+Saloum <span>Drive</span>
+</div>
+
+
+<div>
+
+<a href="index.html">Accueil</a>
+
+<a href="voitures.html">Voitures</a>
+
+<a href="services.html">Services</a>
+<a href="apropos.html">A propos</a>
+
+<a href="contact.html">Contact</a>
+
+</div>
+
+</nav>
+
+
+
+<h1>
+Nos Services
+</h1>
+
+
+
+<div class="services">
+
+
+<div class="box">
+
+<div class="icon">🚗</div>
+
+<h2>Location de voitures</h2>
+
+<p>
+Nous proposons des voitures modernes et confortables adaptées à vos besoins.
+</p>
+
+</div>
+
+
+
+<div class="box">
+
+<div class="icon">🛡️</div>
+
+<h2>Assurance</h2>
+
+<p>
+Nos véhicules sont sécurisés pour vous garantir un voyage tranquille.
+</p>
+
+</div>
+
+
+
+<div class="box">
+
+<div class="icon">⏰</div>
+
+<h2>Service rapide</h2>
+
+<p>
+Réservation simple et disponibilité rapide de nos véhicules.
+</p>
+
+</div>
+
+
+
+<div class="box">
+
+<div class="icon">📍</div>
+
+<h2>Livraison</h2>
+
+<p>
+Nous pouvons livrer votre voiture à l'endroit qui vous convient.
+</p>
+
+</div>
+
+
+
+<div class="box">
+
+<div class="icon">🔧</div>
+
+<h2>Entretien</h2>
+
+<p>
+Nos voitures sont régulièrement entretenues pour votre sécurité.
+</p>
+
+</div>
+
+
+
+<div class="box">
+
+<div class="icon">💳</div>
+
+<h2>Paiement facile</h2>
+
+<p>
+Plusieurs moyens de paiement disponibles pour faciliter vos locations.
+</p>
+
+</div>
+
+
+</div>
+
+
+</body>
+
+</html>
